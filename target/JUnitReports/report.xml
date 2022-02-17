@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="194.235">
+    <testcase classname="feature to test the amazon login functionality" name="test the login functionality of amazon" time="193.53">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;native_dropdown_selected_size_name_12&quot;}&#10;  (Session info: chrome=96.0.4664.45)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-57M536C', ip: '192.168.126.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\NARESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c84785c0022e13947e14ef3d0d04a2ee&#10;*** Element info: {Using=xpath, value=native_dropdown_selected_size_name_12}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user on chrome browser................................................passed
+When user enters the url of amazon..........................................passed
+And hits enters on chrome browser...........................................passed
+Then user should see the sign in page of amazon.............................passed
+When user mouseover on hello sign-in button on amazon.......................passed
+And clicks on sign-n button of amazon.......................................passed
+Then user should see enter email or phonenum textbox of amazon..............passed
+When user enters the email of amazon........................................passed
+And clicks on continue button of amazon.....................................passed
+Then user should see the password textbox of amazon.........................passed
+When user enters the password in password textbox...........................passed
+And clicks on keep me signed-in.............................................passed
+And clicks on sign-button of amazon.........................................passed
+Then user should see the homepage of amazon.................................passed
+When user types shoes for men in search textbox.............................passed
+And hits on search icon.....................................................passed
+Then user should see search results.........................................passed
+And user clicks on adidas  Mens Grand Court Sneaker.........................passed
+Then user should see the select size dropdown...............................passed
+When user select the size...................................................failed
+And clicks on add-to-cart-button............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"native_dropdown_selected_size_name_12"}
+  (Session info: chrome=96.0.4664.45)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-57M536C', ip: '192.168.126.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\NARESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55559}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c84785c0022e13947e14ef3d0d04a2ee
+*** Element info: {Using=xpath, value=native_dropdown_selected_size_name_12}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at StepDefiniations.Amazon_Login.user_select_the_size(Amazon_Login.java:168)
+	at ✽.user select the size(file:///C:/Users/Naresh%20Mannila/Desktop/Naveen/Selenium_Cucumber/src/test/resources/Features/Amazon_Login.feature:23)
+]]></failure>
+    </testcase>
+</testsuite>
